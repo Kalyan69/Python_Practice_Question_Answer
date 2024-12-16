@@ -1,0 +1,17 @@
+Why self is used in OOPs?
+self represents the current instance of the class. It is used to:
+Access attributes and methods of the class.
+Differentiate between instance variables and method parameters or local variables.
+Ensure that changes made inside methods apply to the specific object.
+
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name  # 'self.name' refers to the object's attribute
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}")  # Accessing instance attribute
+
+person = Person("Alice")
+person.greet()  # Output: Hello, my name is Alice
